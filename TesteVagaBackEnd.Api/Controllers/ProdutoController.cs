@@ -24,7 +24,11 @@ namespace TesteVagaBackEnd.Api.Controllers
             if (!resultado.Sucesso)
                 return BadRequest(resultado.MensagemErro);
 
-            return Ok(resultado.Dados);
+            return Created("", new
+            {
+                mensagem = "Produto cadastrado com sucesso.",
+                dados = resultado.Dados
+            });
         }
 
         [HttpDelete("{id}")]

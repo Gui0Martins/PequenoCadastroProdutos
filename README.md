@@ -138,3 +138,11 @@ A API possui validações básicas para criação e atualização de produtos:
 Os dados são armazenados em memória utilizando uma lista dentro do repositório.
 
 Por isso, ao encerrar a aplicação, os produtos cadastrados são perdidos.
+
+## Observação sobre Categoria
+
+A entidade `Categoria` foi incluída para representar a relação de um produto com uma categoria por meio do campo `CategoriaId`.
+
+Neste projeto, o foco principal foi o cadastro de produtos, com operações de criação, listagem, atualização, busca e remoção. Por isso, a categoria foi mantida de forma simples, apenas como parte da estrutura do produto.
+
+Em um cenário real, essa parte poderia ser expandida com um cadastro próprio de categorias, incluindo `CategoriaRepository`, `CategoriaService`, validação para verificar se a categoria existe antes de cadastrar um produto e consultas para listar produtos por categoria.
