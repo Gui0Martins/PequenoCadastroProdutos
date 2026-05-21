@@ -129,7 +129,7 @@ A API possui validações básicas para criação e atualização de produtos:
 
 - O nome do produto não pode ser vazio.
 - O preço deve ser maior que zero.
-- A quantidade não pode ser negativa.
+- A quantidade deve ser maior que zero.
 - O ID informado deve ser válido.
 - Caso o produto não seja encontrado, a API retorna uma resposta adequada.
 
