@@ -20,7 +20,7 @@ public class ProdutoService
         if (response.Preco <= 0)
             return ResultadoServico<Produto>.Falha("Preço inválido", TipoErro.Validacao);
 
-        if (response.Quantidade < 0)
+        if (response.Quantidade <= 0)
             return ResultadoServico<Produto>.Falha("Quantidade inválida", TipoErro.Validacao);
 
         Produto produto = await _produtoRepository.CriarAsync(response);

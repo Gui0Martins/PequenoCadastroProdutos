@@ -1,6 +1,0 @@
-@TesteVagaBackEnd.Api_HostAddress = http://localhost:5237
-
-GET {{TesteVagaBackEnd.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -48,7 +48,7 @@ namespace TesteVagaBackEnd.Api.Controllers
             if (!resultado.Sucesso)
             {
                 if (resultado.TipoErro == TipoErro.Validacao)
-                return BadRequest(resultado.MensagemErro);
+                    return BadRequest(resultado.MensagemErro);
 
                 if (resultado.TipoErro == TipoErro.NaoEncontrado)
                     return NotFound(resultado.MensagemErro);
